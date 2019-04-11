@@ -18,7 +18,7 @@ public class ScoreScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		scoreT.text = "Score: " + score;
-		if (Time.time - lastTime >= 1.0f) {
+		if (Time.time - lastTime >= 1.0f && timerT != null) {
 			timer -= 1;
 			timerT.text = "Time: " + timer;
 			lastTime = Time.time;
