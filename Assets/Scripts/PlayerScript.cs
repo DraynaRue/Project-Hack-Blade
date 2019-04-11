@@ -13,7 +13,9 @@ public class PlayerScript : MonoBehaviour
     static public float playerHealth;
 
     //PC ONLY VARIABLES
+    
     public float jumpForce;
+    protected GameObject pauseMenu;
     float horizontal = 0.0f;
 
     void Start()
@@ -24,6 +26,11 @@ public class PlayerScript : MonoBehaviour
         playerHealth = 100;
         ScoreScript.score = 0;
         ScoreScript.timer = 255;
+
+        // if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor)
+        // {
+            
+        // }
 	}
 
 	private void FixedUpdate ()
@@ -70,6 +77,19 @@ public class PlayerScript : MonoBehaviour
             {
                 ani.SetTrigger("Attack");
             }
+            // if (Input.GetAxis("Cancel") > 0)
+            // {
+            //     if (pauseMenu.activeSelf == true)
+            //     {
+            //         pauseMenu.SetActive(false);
+            //         Time.timeScale = 1;
+            //     }
+            //     else if (pauseMenu.activeSelf == false)
+            //     {
+            //         pauseMenu.SetActive(true);
+            //         Time.timeScale = 0;
+            //     }
+            // }
             rb.transform.Translate(horizontal, 0, 0);
         }
     }

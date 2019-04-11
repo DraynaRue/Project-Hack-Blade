@@ -11,6 +11,7 @@ TagManager:
   - Music
   - MultiSceneMusic
   - MobileOnly
+  - PauseMenu
   layers:
   - Default
   - TransparentFX

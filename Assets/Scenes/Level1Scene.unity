@@ -2157,7 +2157,7 @@ GameObject:
   - component: {fileID: 596030775}
   m_Layer: 5
   m_Name: Return to title
-  m_TagString: Untagged
+  m_TagString: PauseMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7081,7 +7081,7 @@ GameObject:
   - component: {fileID: 2107201754}
   m_Layer: 5
   m_Name: Menu
-  m_TagString: MobileOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
