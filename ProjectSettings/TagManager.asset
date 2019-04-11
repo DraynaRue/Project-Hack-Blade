@@ -10,6 +10,7 @@ TagManager:
   - Instakill
   - Music
   - MultiSceneMusic
+  - MobileOnly
   layers:
   - Default
   - TransparentFX
